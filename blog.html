@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 px-10 py-5 grid gap-5">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm rounded-xl p-5">
+            <div class="flex-1">
+                <div class="flex align-middle items-center">
+                    <img class="w-12" src="assets/logo.png" alt="">
+              <a class="btn btn-ghost text-2xl"><span class="font-bold"><span class="font-normal">Dev</span>Board</span></a>
+                </div>
+            </div>
+            <div class="flex-none">
+              <button id="back-btn" class="btn btn-ghost bg-blue-700 text-white">Back to Desk</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="text-center m-auto font-bold text-2xl opacity-95">Blogs</section>
+        <section class="mt-5 grid gap-5">
+            <div class="rounded-xl bg-white p-4">
+                <h1 class="font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <span class="text-3xl opacity-10">------------------------------------------------------------------------------------------------------------------</span>
+                <p>Ans: There are few ways to do that. Like: <br>
+                    a. By using id- getElementById <br>
+                    b. By class- getElementsByClass <br>
+                    c. By tag name- getElementsByTagName <br>
+                    d. By css query selector- querySelector <br>
+                    e. By css query selector all- querySelectorAll
+                </p>
+            </div>
+            <div class="rounded-xl bg-white p-4">
+                <h1 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h1>
+                <span class="text-3xl opacity-10">------------------------------------------------------------------------------------------------------------------</span>
+                <p>a. innerHTML is the HTML code inside of any selected element. <br>
+                    b. innerText is the string value inside any html tags or elements. It doesn't read any text that's hidden using css.<br>
+                    c. textContent is similar to innerText. Just it can read all the text related contents of an element whether it's hidden or shown.
+                </p>
+            </div>
+            <div class="rounded-xl bg-white p-4">
+                <h1 class="font-bold">Question-3: What is event delegation in the DOM?
+                </h1>
+                <span class="text-3xl opacity-10">------------------------------------------------------------------------------------------------------------------</span>
+                <p>The process of attaching an event listener with the parent element instead of different child elements is delegation of event in DOM</p>
+            </div>
+            <div class="rounded-xl bg-white p-4">
+                <h1 class="font-bold">Question-4: What is event bubbling in the DOM?
+                </h1>
+                <span class="text-3xl opacity-10">------------------------------------------------------------------------------------------------------------------</span>
+                <p>It is the hierarchical order in which events propagate in a DOM</p>
+            </div>
+            <div class="rounded-xl bg-white p-4">
+                <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <span class="text-3xl opacity-10">------------------------------------------------------------------------------------------------------------------</span>
+                <p>a. To create elements we use createElement
+                    <br>b. To add the created element, we use appendChild();. i.e. element's-container.appendChild(newly created element). <br>
+                    c. To remove, we use .remove();
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function(event){
+            window.location = '/index.html';
+        })
+    </script>
+</body>
+</html>

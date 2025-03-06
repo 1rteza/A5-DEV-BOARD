@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 px-10 py-5 grid gap-5">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm rounded-xl p-5">
+            <div class="flex-1">
+                <div class="flex align-middle items-center">
+                    <img class="w-12" src="assets/logo.png" alt="">
+              <a class="btn btn-ghost text-2xl"><span class="font-bold"><span class="font-normal">Dev</span>Board</span></a>
+                </div>
+            </div>
+            <div class="flex-none">
+              <div class="flex items-center gap-7">
+                <div class="flex rounded-4xl bg-slate-100 p-3 gap-3">
+                    <img class="w-8" src="assets/checkbox.png" alt="">
+                    <h1 id="task-done" class="font-bold text-2xl">23</h1>
+                  </div>
+                  <div id="theme-changer" class="rounded-full bg-slate-100 p-3">
+                    <img class="w-8" src="assets/theme-btn.png" alt="">
+                  </div>
+              </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="flex gap-6">
+            <section class="bg-white rounded-lg  p-5 flex-5">
+                <div class="flex justify-between gap-5">
+                    <div class="bg-slate-100 flex p-4 rounded-xl gap-4 items-center flex-1">
+                        <div class="bg-white rounded-full p-4"><img src="assets/checkbox.png" class="w-6" alt=""></div>
+                        <div>
+                            <h3 class="font-medium text-xs opacity-85">Task Assigned</h3>
+                            <h1 id="task-assigned" class="font-bold text-2xl">06</h1>
+                        </div>
+                    </div>
+                    <div id="go-blog" class="flex-2 bg-gradient-to-l from-purple-500 to-blue-500 flex p-4 rounded-xl gap-4 items-center cursor-pointer">
+                        <img src="assets/board.png" alt="">
+                        <h2 class="text-slate-50 font-semibold text-lg">Discover Something New Today!</h2>
+                    </div>
+                    <div class="flex-1 bg-slate-100 flex p-4 rounded-xl gap-4 items-center">
+                        
+                        <div class="bg-white rounded-full p-4"><img src="assets/calender.png" class="w-6" alt=""></div>
+                        <div>
+                            <h3 class="font-medium text-lg opacity-85">Wed ,</h3>
+                            <h1 class="font-bold text-2xl opacity-90">Jul 28 2025</h1>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="text-3xl opacity-10">------------------------------------------------------------------------------------------</p><br>
+                <div class="card-container grid grid-cols-3 gap-8">
+                    <div class="card bg-slate-50 p-5 w- grid gap-4">
+                        <div class="bg-white w-24 px-3 py-1">
+                            <div class="font-semibold rounded-xl">ShopEase</div>
+                        </div>
+                        <h1 id="fix-title" class="text-xl font-bold opacity-95">Fix Mobile Button Issue</h1>
+                        <p class="bg-white p-3 rounded-lg"><span class="opacity-60">Debug using Chrome DevTools, check for overlapping ...</span></p>
+                        <div class="flex justify-between items-center">
+                            <div class="date">
+                                <h3 class="opacity-80 text-base">Deadline</h3>
+                                <h1 class="opacity-95 ">21 March 2025</h1>
+                            </div>
+                            <button id="fix-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="card bg-slate-50 p-5 w- grid gap-4">
+                        <div class="bg-white w-24 px-3 py-1">
+                            <div class="font-semibold rounded-xl">CloudSync</div>
+                        </div>
+                        <h1 id="dark-title" class="text-xl font-bold opacity-95">Add Dark Mode</h1>
+                        <p class="bg-white p-3 rounded-lg"><span class="opacity-60">Store the user's preference in localStorage, update CSS ...</span></p>
+                        <div class="flex justify-between items-center">
+                            <div class="date">
+                                <h3 class="opacity-80 text-base">Deadline</h3>
+                                <h1 class="opacity-95 ">21 March 2025</h1>
+                            </div>
+                            <button id="dark-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="card bg-slate-50 p-5 w- grid gap-4">
+                        <div class="bg-white w-24 px-3 py-1">
+                            <div class="font-semibold rounded-xl">SwiftPay</div>
+                        </div>
+                        <h1 id="optimize-title" class="text-xl font-bold opacity-95">Optimize Home Page</h1>
+                        <p class="bg-white p-3 rounded-lg"><span class="opacity-60">Debug using Chrome DevTools, check for overlapping ...</span></p>
+                        <div class="flex justify-between items-center">
+                            <div class="date">
+                                <h3 class="opacity-80 text-base">Deadline</h3>
+                                <h1 class="opacity-95 ">21 March 2025</h1>
+                            </div>
+                            <button id="optimize-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="card bg-slate-50 p-5 w- grid gap-4">
+                        <div class="bg-white w-24 px-3 py-1">
+                            <div class="font-semibold rounded-xl">ShopEase</div>
+                        </div>
+                        <h1 id="emoji-title" class="text-xl font-bold opacity-95">Add new emoji 🤲</h1>
+                        <p class="bg-white p-3 rounded-lg"><span class="opacity-60">Debug using Chrome DevTools, check for overlapping ...</span></p>
+                        <div class="flex justify-between items-center">
+                            <div class="date">
+                                <h3 class="opacity-80 text-base">Deadline</h3>
+                                <h1 class="opacity-95 ">21 March 2025</h1>
+                            </div>
+                            <button id="emoji-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="card bg-slate-50 p-5 w- grid gap-4">
+                        <div class="bg-white w-24 px-3 py-1">
+                            <div class="font-semibold rounded-xl">GoogleLLC</div>
+                        </div>
+                        <h1 id="integrate-title" class="text-xl font-bold opacity-95">Integrate OpenAI API</h1>
+                        <p class="bg-white p-3 rounded-lg"><span class="opacity-60">Debug using Chrome DevTools, check for overlapping ...</span></p>
+                        <div class="flex justify-between items-center">
+                            <div class="date">
+                                <h3 class="opacity-80 text-base">Deadline</h3>
+                                <h1 class="opacity-95 ">21 March 2025</h1>
+                            </div>
+                            <button id="integrate-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                    <div class="card bg-slate-50 p-5 w- grid gap-4">
+                        <div class="bg-white w-24 px-3 py-1">
+                            <div class="font-semibold rounded-xl">Glassdoar</div>
+                        </div>
+                        <h1 id="improve-title" class="text-xl font-bold opacity-95">Improve Job Searching</h1>
+                        <p class="bg-white p-3 rounded-lg"><span class="opacity-60">Debug using Chrome DevTools, check for overlapping ...</span></p>
+                        <div class="flex justify-between items-center">
+                            <div class="date">
+                                <h3 class="opacity-80 text-base">Deadline</h3>
+                                <h1 class="opacity-95 ">21 March 2025</h1>
+                            </div>
+                            <button id="improve-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white rounded-lg  p-5 flex-1">
+                <div id="activity-log" class="grid gap-5 justify-center justify-items-center">
+                    <div class="flex gap-3 items-center">
+                        <img class="w-6" src="assets/activity.png" alt="">
+                        <h2 class="text-lg font-semibold opacity-95">Activity Log</h2>
+                    </div>
+                    <button id="Clear-btn" class="btn bg-blue-600 text-yellow-50 rounded-lg">Clear History</button>
+                    <span class="text-3xl opacity-10">------------------</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('go-blog').addEventListener('click', function(event){
+            window.location = '/blog.html';
+        })
+    </script>
+    
+    <script src="scripts/clear.js"></script>
+    <script src="scripts/completed-btns.js"></script>
+    <script src="scripts/theme-changer.js"></script>
+</body>
+</html>
